@@ -1,3 +1,4 @@
 # Terraform_Azure
 
-- This Git Repository is used as a portfolio to showcase the work done by Divyansh Jaiswal on Terraform on Azure cloud.
+- This Git Repository contains the Terraform codes from basic to advanced level for Azure Cloud Platform.
+- For AWS Git Repository please follow the link https://github.com/divyanshjswl/Terraform_AWS
