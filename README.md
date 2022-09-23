@@ -1,3 +1,3 @@
 # Terraform_Azure
 
-- This Git Repository is used as a potrfolio to showcase the work performed by Divyansh Jaiswal on Terraform on Azure cloud.
+- This Git Repository is used as a portfolio to showcase the work done by Divyansh Jaiswal on Terraform on Azure cloud.
