@@ -1,0 +1,1 @@
+resource_group_end_name = "TerraformRG"
