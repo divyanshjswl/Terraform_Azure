@@ -1,0 +1,1 @@
+web_linux_vm_admin_username = "terraformuser"

@@ -1,0 +1,27 @@
+resource "azurerm_linux_virtual_machine" "bastion_linux_vm" {
+  name                = "${local.owner}-${local.division}-${local.environment}-BastionLinuxVm"
+  resource_group_name = azurerm_resource_group.terraform_rg.name
+  location            = azurerm_resource_group.terraform_rg.location
+  size                = var.bastion_vm_size
+  admin_username      = "terraformuser"
+  network_interface_ids = [
+    azurerm_network_interface.bastion_linuxvm_nic.id
+  ]
+
+  admin_ssh_key {
+    username   = "terraformuser"
+    public_key = file("${path.module}/ssh-keys/terraform-azure.pub")
+  }
+
+  os_disk {
+    caching              = "ReadWrite"
+    storage_account_type = "Standard_LRS"
+  }
+
+  source_image_reference {
+    publisher = "RedHat"
+    offer     = "RHEL"
+    sku       = "83-gen2"
+    version   = "latest"
+  }
+}

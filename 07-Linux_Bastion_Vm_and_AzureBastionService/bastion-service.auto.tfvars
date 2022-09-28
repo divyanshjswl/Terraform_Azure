@@ -1,0 +1,1 @@
+azure_bastion_service_address_prefixes = ["10.1.100.0.24"]
